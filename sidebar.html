@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YouTube Transcript</title>
+  <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+  <div class="sidebar-container">
+    <!-- Header -->
+    <div class="header">
+      <h2 class="title">YouTube Transcript</h2>
+      <div class="controls">
+        <button id="cleanTextBtn" class="btn btn-secondary" disabled>
+          Clean Text
+        </button>
+        <button id="downloadBtn" class="btn btn-primary" disabled>
+          Download
+        </button>
+      </div>
+    </div>
+
+    <!-- Video Info -->
+    <div id="videoInfo" class="video-info" style="display: none;">
+      <div class="video-title"></div>
+      <div class="video-meta">
+        <span class="channel"></span> • <span class="date"></span>
+      </div>
+    </div>
+
+    <!-- Status/Loading -->
+    <div id="status" class="status">
+      <div class="status-icon">📄</div>
+      <div class="status-text">Navigate to a YouTube video and click "Load Transcript"</div>
+      <button id="loadTranscriptBtn" class="btn btn-primary">Load Transcript</button>
+    </div>
+
+    <!-- Transcript Content -->
+    <div id="transcriptContainer" class="transcript-container" style="display: none;">
+      <div class="transcript-header">
+        <div class="transcript-stats">
+          <span id="segmentCount">0 segments</span>
+          <span id="wordCount">0 words</span>
+        </div>
+      </div>
+      
+      <div id="transcriptContent" class="transcript-content">
+        <!-- Transcript will be populated here -->
+      </div>
+    </div>
+
+    <!-- Error State -->
+    <div id="errorState" class="error-state" style="display: none;">
+      <div class="error-icon">⚠️</div>
+      <div class="error-title">Transcript Not Available</div>
+      <div class="error-message">This video doesn't have captions available, or there was an error loading the transcript.</div>
+      <button id="retryBtn" class="btn btn-secondary">Try Again</button>
+    </div>
+  </div>
+
+  <script src="sidebar.js"></script>
+</body>
+</html>
