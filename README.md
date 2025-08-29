@@ -2,6 +2,8 @@
 
 A simple browser extension to extract and display YouTube video transcripts.
 
+Here's the [Chrome Store link](https://chromewebstore.google.com/detail/youtube-transcript-downlo/amocilkjnmhbaflilmkbjphompimploo]) to add it to your browser (works on Edge too)
+
 ## Features
 - Extracts transcripts from YouTube videos
 - Displays transcripts in a sidebar or popup
